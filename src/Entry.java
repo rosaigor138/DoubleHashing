@@ -1,13 +1,13 @@
 public class Entry {
-    private final int key;
+    private final Integer key;
     private final String element;
     private boolean available;
 
-    public void setAvailable() {
+    public void toggleAvailability() {
         this.available = !this.isAvailable();
     }
 
-    public Entry(int key, String value){
+    public Entry(Integer key, String value){
         this.key = key;
         this.element = value;
         this.available = false;

@@ -49,6 +49,19 @@ public class App {
                     System.out.println("Enter the key");
                     System.out.println(hashTable.search(scanner.nextInt()));
                 }
+                case 3 -> {
+                    System.out.println("Enter the key");
+                    hashTable.removeWithKey(scanner.nextInt());
+                }
+                case 4 -> {
+                    System.out.println("All the available elements deleted");
+                    hashTable.removeUnavailableElements();
+                }
+                case 5 -> {
+                    System.out.println("Enter the element that will be set available," +
+                            "if the element already available it will be set unavailable");
+                    hashTable.toggleAvailabilityWithKey(scanner.nextInt());
+                }
                 case 9 -> System.exit(0);
             }
         }
